@@ -5,6 +5,7 @@ import styles from "./page.module.css";
 
 const Login = () => {
   return (
+  <div className={styles.container}>
     <div className={styles.loginContainer}>
       <div className={styles.loginHeader}>Login Page!</div>
       <form className={styles.loginForm}>
@@ -13,7 +14,7 @@ const Login = () => {
             Username
           </label>
           <input
-            className={styles.loginInput}
+            className={styles.formInput}
             type="text"
             id="username"
             name="username"
@@ -26,7 +27,7 @@ const Login = () => {
             Password
           </label>
           <input
-            className={styles.loginInput}
+            className={styles.formInput}
             type="password"
             id="password"
             name="password"
@@ -34,15 +35,18 @@ const Login = () => {
             required
           />
         </div>
-        <Link href={"forgot-password"} className={styles.forgotPassword}>Forgot Password?</Link>
-
+        
         <div className={styles.buttonContainer}>
           <button className={styles.loginButton}>Login</button>
         </div>
       </form>
-      <Link className={styles.signupLink} href={"/register"}>
-        Don't have an account? Sign up here
+      <div className={styles.loginFooter}>
+      <Link href={"forgot-password"} className={styles.forgotPassword}>Forgot Password?</Link>
+      <Link className={styles.registerLink} href={"/register"}>
+        Register Now
       </Link>
+      </div>
+    </div>
     </div>
   );
 };
