@@ -1,0 +1,81 @@
+.registerContainer {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 35rem;
+    text-align: center;
+    margin: 15rem auto;
+    /* Center the container */
+  }
+  
+  .registerHeader {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--black);
+  }
+  
+  .registerForm {
+    text-align: left;
+  }
+  
+  .formGroup {
+    margin-bottom: 1.5rem;
+  }
+  
+  .formLabel {
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .registerInput {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    font-size: 1.25rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .registerInput:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .registerButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 1rem 1.5rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .registerButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .loginLink {
+    display: inline-block;
+    margin: 1rem 0;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .loginLink:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.25rem;
+  }
+  
