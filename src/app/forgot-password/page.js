@@ -2,7 +2,7 @@ import React from 'react';
 import ForgotPassword from "./forgot-password";
 
 export const metadata = {
-  title: 'Login: Dashboard Management',
+  title: 'Forgot: Dashboard Management',
 }
 
 const ForgotPasswordPage= () => {

@@ -5,15 +5,15 @@ import styles from "./page.module.css";
 
 const Login = () => {
   return (
-    <div class={styles.loginContainer}>
-      <div class={styles.loginHeader}>Login Page!</div>
-      <form class={styles.loginForm}>
-        <div class={styles.formGroup}>
-          <label class={styles.formLabel} htmlFor="username">
+    <div className={styles.loginContainer}>
+      <div className={styles.loginHeader}>Login Page!</div>
+      <form className={styles.loginForm}>
+        <div className={styles.formGroup}>
+          <label className={styles.formLabel} htmlFor="username">
             Username
           </label>
           <input
-            class={styles.loginInput}
+            className={styles.loginInput}
             type="text"
             id="username"
             name="username"
@@ -21,12 +21,12 @@ const Login = () => {
             required
           />
         </div>
-        <div class={styles.formGroup}>
-          <label class={styles.formLabel} htmlFor="password">
+        <div className={styles.formGroup}>
+          <label className={styles.formLabel} htmlFor="password">
             Password
           </label>
           <input
-            class={styles.loginInput}
+            className={styles.loginInput}
             type="password"
             id="password"
             name="password"
@@ -37,10 +37,10 @@ const Login = () => {
         <Link href={"forgot-password"} className={styles.forgotPassword}>Forgot Password?</Link>
 
         <div className={styles.buttonContainer}>
-          <button class={styles.loginButton}>Login</button>
+          <button className={styles.loginButton}>Login</button>
         </div>
       </form>
-      <Link class={styles.signupLink} href={"/register"}>
+      <Link className={styles.signupLink} href={"/register"}>
         Don't have an account? Sign up here
       </Link>
     </div>

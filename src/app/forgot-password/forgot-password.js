@@ -5,15 +5,15 @@ import styles from "./page.module.css";
 
 const ForgotPassword = () => {
   return (
-    <div class={styles.forgotContainer}>
-      <div class={styles.forgotHeader}>Forgot Password Page!</div>
-      <form class={styles.forgotForm}>
-        <div class={styles.formGroup}>
-          <label class={styles.formLabel} htmlFor="email">
+    <div className={styles.forgotContainer}>
+      <div className={styles.forgotHeader}>Forgot Password Page!</div>
+      <form className={styles.forgotForm}>
+        <div className={styles.formGroup}>
+          <label className={styles.formLabel} htmlFor="email">
             Email
           </label>
           <input
-            class={styles.forgotInput}
+            className={styles.forgotInput}
             type="email"
             id="email"
             name="email"
@@ -22,10 +22,10 @@ const ForgotPassword = () => {
           />
         </div>
         <div className={styles.buttonContainer}>
-          <button class={styles.forgotButton}>Recover</button>
+          <button className={styles.forgotButton}>Recover</button>
         </div>
       </form>
-      <Link class={styles.loginLink} href={"/login"}>
+      <Link className={styles.loginLink} href={"/login"}>
         Back to Login Page
       </Link>
     </div>

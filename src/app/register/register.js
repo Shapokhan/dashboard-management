@@ -5,15 +5,15 @@ import styles from "./page.module.css";
 
 const Register = () => {
   return (
-    <div class={styles.registerContainer}>
-      <div class={styles.registerHeader}>Registration Page!</div>
-      <form class={styles.registerForm}>
-        <div class={styles.formGroup}>
-          <label class={styles.formLabel} htmlFor="username">
+    <div className={styles.registerContainer}>
+      <div className={styles.registerHeader}>Registration Page!</div>
+      <form className={styles.registerForm}>
+        <div className={styles.formGroup}>
+          <label className={styles.formLabel} htmlFor="username">
             Username
           </label>
           <input
-            class={styles.registerInput}
+            className={styles.registerInput}
             type="text"
             id="username"
             name="username"
@@ -21,12 +21,12 @@ const Register = () => {
             required
           />
         </div>
-        <div class={styles.formGroup}>
-          <label class={styles.formLabel} htmlFor="password">
+        <div className={styles.formGroup}>
+          <label className={styles.formLabel} htmlFor="password">
             Password
           </label>
           <input
-            class={styles.registerInput}
+            className={styles.registerInput}
             type="password"
             id="password"
             name="password"
@@ -35,10 +35,10 @@ const Register = () => {
           />
         </div>
         <div className={styles.buttonContainer}>
-          <button class={styles.registerButton}>Register</button>
+          <button className={styles.registerButton}>Register</button>
         </div>
       </form>
-      <Link class={styles.loginLink} href={"/login"}>
+      <Link className={styles.loginLink} href={"/login"}>
         Already have an account? Login here
       </Link>
     </div>
