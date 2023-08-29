@@ -1,14 +1,14 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import styles from "./page.module.css";
+import styles from "../../../assets/css/auth.module.css";
 
 const Login = () => {
   return (
-  <div className={styles.container}>
-    <div className={styles.loginContainer}>
-      <div className={styles.loginHeader}>Login Page!</div>
-      <form className={styles.loginForm}>
+    <div className={styles.container}>
+    <div className={styles.authContainer}>
+      <div className={styles.authHeader}>Login Page!</div>
+      <form className={styles.authForm}>
         <div className={styles.formGroup}>
           <label className={styles.formLabel} htmlFor="username">
             Username
@@ -37,10 +37,10 @@ const Login = () => {
         </div>
         
         <div className={styles.buttonContainer}>
-          <button className={styles.loginButton}>Login</button>
+            <button className={styles.authButton}>Login</button>
         </div>
       </form>
-      <div className={styles.loginFooter}>
+      <div className={styles.authFooter}>
       <Link href={"forgot-password"} className={styles.forgotPassword}>Forgot Password?</Link>
       <Link className={styles.registerLink} href={"/register"}>
         Register Now

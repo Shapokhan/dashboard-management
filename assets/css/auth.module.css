@@ -1,11 +1,12 @@
-.container {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Main Starting Container */
+.container{
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
-.loginContainer {
+.authContainer {
   background-color: var(--white);
   padding: 2rem;
   border-radius: 2rem;
@@ -13,18 +14,16 @@
   width: 100%;
   max-width: 35rem;
   text-align: center;
-  margin: 15rem auto;
-  /* Center the container */
 }
 
-.loginHeader {
+.authHeader {
   font-size: 1.75rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
   color: var(--primary-color);
 }
 
-.loginForm {
+.authForm {
   text-align: left;
 }
 
@@ -42,7 +41,7 @@
 .formInput {
   width: 100%;
   padding: 1rem;
-  border: 1px solid #ccc;
+  border: 1px solid var(--input-border-color);
   border-radius: 0.25rem;
   font-size: 1.25rem;
   transition: border-color 0.3s ease;
@@ -58,7 +57,7 @@
   justify-content: flex-end;
 }
 
-.loginButton {
+.authButton {
   background-color: var(--primary-color);
   color: #fff;
   border: none;
@@ -68,29 +67,22 @@
   cursor: pointer;
 }
 
-.loginFooter {
+.authFooter {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.loginFooter a:hover {
+.authFooter a:hover {
   text-decoration: underline;
   text-underline-offset: 0.25rem;
 }
 
-.registerLink {
-  display: inline-block;
-  margin: 1rem 0;
+.authFooter a {
   color: var(--primary-color);
   text-decoration: none;
   font-size: 1.25rem;
   font-weight: bold;
+  margin-top: 1rem;
 }
 
-.forgotPassword {
-  color: var(--primary-color);
-  text-decoration: none;
-  font-size: 1.25rem;
-  font-weight: bold;
-}
