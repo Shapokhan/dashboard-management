@@ -9,15 +9,13 @@ const Dashboard = () => {
   return (
     <div className={styles.home}>
       <Sidebar />
-
       <div className={styles.homeContainer}>
         <Navbar />
-        
         <div className={styles.widgets}>
-            <Widget />
-            <Widget />
-            <Widget />
-            <Widget />
+          <Widget />
+          <Widget />
+          <Widget />
+          <Widget />
         </div>
       </div>
     </div>
