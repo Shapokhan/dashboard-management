@@ -1,4 +1,12 @@
-.loginContainer {
+/* Main Starting Container */
+.container{
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.authContainer {
   background-color: var(--white);
   padding: 2rem;
   border-radius: 2rem;
@@ -6,18 +14,16 @@
   width: 100%;
   max-width: 35rem;
   text-align: center;
-  margin: 15rem auto;
-  /* Center the container */
 }
 
-.loginHeader {
+.authHeader {
   font-size: 1.75rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
-  color: var(--black);
+  color: var(--primary-color);
 }
 
-.loginForm {
+.authForm {
   text-align: left;
 }
 
@@ -29,19 +35,20 @@
   font-size: 1.5rem;
   display: block;
   margin-bottom: 0.5rem;
+  color: var(--primary-color);
 }
 
-.loginInput {
+.formInput {
   width: 100%;
   padding: 1rem;
-  border: 1px solid #ccc;
+  border: 1px solid var(--input-border-color);
   border-radius: 0.25rem;
   font-size: 1.25rem;
   transition: border-color 0.3s ease;
 }
 
-.loginInput:focus {
-  border-color: #007bff;
+.formInput:focus {
+  border-color: var(--primary-color);
   outline: none;
 }
 
@@ -50,37 +57,32 @@
   justify-content: flex-end;
 }
 
-.loginButton {
-  background-color: #007bff;
+.authButton {
+  background-color: var(--primary-color);
   color: #fff;
   border: none;
   border-radius: 0.25rem;
   padding: 1rem 1.5rem;
   font-size: 1.25rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-.loginButton:hover {
-  background-color: #0056b3;
+.authFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.signupLink {
-  display: inline-block;
-  margin: 1rem 0;
-  color: #007bff;
-  text-decoration: none;
-  font-size: 1.25rem;
-  font-weight: bold;
-}
-
-.signupLink:hover {
+.authFooter a:hover {
   text-decoration: underline;
   text-underline-offset: 0.25rem;
 }
 
-.forgotPassword {
-  color: #007bff;
+.authFooter a {
+  color: var(--primary-color);
   text-decoration: none;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 1rem;
 }
+
