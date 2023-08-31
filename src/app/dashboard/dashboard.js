@@ -17,17 +17,10 @@ const Dashboard = () => {
 
         <Navbar />
         <div className={styles.widgets}>
-<<<<<<< Updated upstream
-          <Widget />
-          <Widget />
-          <Widget />
-          <Widget />
-=======
             <Widget type="user" />
             <Widget type="order" />
             <Widget type="earning" />
             <Widget type="balance" />
->>>>>>> Stashed changes
         </div>
 
         <div className={styles.charts}>
