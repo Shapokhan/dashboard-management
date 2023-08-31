@@ -17,7 +17,7 @@ const Sidebar = () => {
   return (
     <div className={styles.sidebar}>
       <div className={styles.top}>
-        <Link href={"/dashboard"} style={{textDecoration:"none"}}>
+        <Link href={"/dashboard"}>
           <span className={styles.logo}>Dashboard</span>
         </Link>
       </div>
@@ -26,14 +26,14 @@ const Sidebar = () => {
         <ul className={styles.sidebarItems}>
           <p className={styles.title}>MAIN</p>
           <li>
-            <Link href={"/dashboard"} style={{textDecoration:"none"}}>
+            <Link href={"/dashboard"}>
               <DashboardIcon className={styles.icon} />
               <span>Dashboard</span>
             </Link>
           </li>
           <p className={styles.title}>LISTS</p>
           <li>
-            <Link href={"/list"} style={{textDecoration:"none"}}>
+            <Link href={"/list"}>
               <PersonOutlineIcon className={styles.icon} />
               <span>Users</span>
             </Link>

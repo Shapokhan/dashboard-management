@@ -11,10 +11,13 @@
     justify-content: center;
     align-items: center;
 }
+.top a{
+    text-decoration: none;
+}
 
 .logo {
     font-size: 2rem;
-    color: purple;
+    color: var(--primary-color);
 }
 
 .horizaltalLine {
@@ -43,15 +46,19 @@
     align-items: center;
     padding: 0.5rem;
     cursor: pointer;
+    
 }
 
 .sidebarItems li:hover {
-    background-color: #ece8ff;
+    background-color: var(--primary-color-hover)
 }
-
+.sidebarItems li a{
+    display: flex;
+    text-decoration: none;
+}
 .icon {
     font-size: 1.8rem;
-    color: #7451f8;
+    color: var(--primary-color);
 }
 
 .sidebarItems span {
@@ -71,7 +78,7 @@
     width: 2rem;
     height: 2rem;
     border-radius: 0.5rem;
-    border: 1px solid #7451f8;
+    border: 1px solid var(--primary-color);
     cursor: pointer;
     margin: 0.5rem;
 }

@@ -29,7 +29,6 @@
 .sidebar {
     grid-area: sidebar;
     height: 100%;
-    background-color: rgb(29, 38, 154);
     color: rgb(255, 255, 255);
     overflow-y: auto;
     transition: all 0.5s;

@@ -85,3 +85,6 @@ body {
   color: #444;
   background-color: var(--main-bg-color);
 }
+.displayFlex{
+  display:"flex";
+}
