@@ -1,6 +1,5 @@
 .home {
     display: flex;
-    border: 4px solid var(--primary-color);
     height: 100vh;
 }
 
