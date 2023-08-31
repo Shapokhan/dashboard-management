@@ -22,13 +22,13 @@
     padding: 0.3rem;
 }
 
-input {
+.search input {
     border: none;
     outline: none;
     background-color: transparent;
 }
 
-input::placeholder {
+.search input::placeholder {
     font-size: 1.2rem;
 }
 
@@ -42,6 +42,7 @@ input::placeholder {
     align-items: center;
     margin-right: 2rem;
     position: relative;
+    cursor: pointer;
 }
 
 .icon {
@@ -70,3 +71,49 @@ input::placeholder {
     right: -5px;
 }
 
+.dropdownContent {
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    border-radius: 1rem;
+    overflow: hidden;
+    z-index: 1;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    top: 4rem;
+    right: -3rem;
+    opacity: 0; /* Initially hide the dropdown */
+    pointer-events: none; /* Disable interactions with hidden dropdown */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.show {
+    opacity: 1; /* Show the dropdown */
+    pointer-events: auto; /* Enable interactions when shown */
+}
+
+.dropdownContent li {
+    padding: 1.2rem 1.6rem;
+    border-bottom: 1px solid gray;
+}
+
+.dropdownContent li:nth-child(3)
+{
+    border-bottom: none;
+}
+
+.dropdownContent a {
+    color: black;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.dropdownContent li:hover {
+    background-color: #f1f1f1;
+}

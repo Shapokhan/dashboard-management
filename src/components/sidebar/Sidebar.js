@@ -1,4 +1,4 @@
-import "./sidebar.css";
+import styles from './sidebar.module.css';
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
@@ -11,75 +11,82 @@ import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import SettingsSystemDaydreamOutlinedIcon from "@mui/icons-material/SettingsSystemDaydreamOutlined";
 import PsychologyOutlinedIcon from "@mui/icons-material/PsychologyOutlined";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
+import Link from 'next/link';
 
 const Sidebar = () => {
   return (
-    <div className="sidebar">
-      <div className="top">
-        <span className="logo">Dashboard</span>
+    <div className={styles.sidebar}>
+      <div className={styles.top}>
+        <Link href={"/dashboard"} style={{textDecoration:"none"}}>
+          <span className={styles.logo}>Dashboard</span>
+        </Link>
       </div>
-      <hr />
-      <div className="center">
-        <ul>
-          <p className="title">MAIN</p>
+      <hr className={styles.horizaltalLine} />
+      <div className={styles.center}>
+        <ul className={styles.sidebarItems}>
+          <p className={styles.title}>MAIN</p>
           <li>
-            <DashboardIcon className="icon" />
-            <span>Dashboard</span>
+            <Link href={"/dashboard"} style={{textDecoration:"none"}}>
+              <DashboardIcon className={styles.icon} />
+              <span>Dashboard</span>
+            </Link>
           </li>
-          <p className="title">LISTS</p>
+          <p className={styles.title}>LISTS</p>
           <li>
-            <PersonOutlineIcon className="icon" />
-            <span>Users</span>
+            <Link href={"/list"} style={{textDecoration:"none"}}>
+              <PersonOutlineIcon className={styles.icon} />
+              <span>Users</span>
+            </Link>
           </li>
           <li>
-            <StoreIcon className="icon" />
+            <StoreIcon className={styles.icon} />
             <span>Products</span>
           </li>
           <li>
-            <CreditCardIcon className="icon" />
+            <CreditCardIcon className={styles.icon} />
             <span>Orders</span>
           </li>
           <li>
-            <LocalShippingIcon className="icon" />
+            <LocalShippingIcon className={styles.icon} />
             <span>Delivery</span>
           </li>
-          <p className="title">USEFUL</p>
+          <p className={styles.title}>USEFUL</p>
           <li>
-            <InsertChartIcon className="icon" />
+            <InsertChartIcon className={styles.icon} />
             <span>Stats</span>
           </li>
           <li>
-            <NotificationsNoneIcon className="icon" />
+            <NotificationsNoneIcon className={styles.icon} />
             <span>Notifications</span>
           </li>
-          <p className="title">SERVICE</p>
+          <p className={styles.title}>SERVICE</p>
           <li>
-            <SettingsSystemDaydreamOutlinedIcon className="icon" />
+            <SettingsSystemDaydreamOutlinedIcon className={styles.icon} />
             <span>System Health</span>
           </li>
           <li>
-            <PsychologyOutlinedIcon className="icon" />
+            <PsychologyOutlinedIcon className={styles.icon} />
             <span>Logs</span>
           </li>
           <li>
-            <SettingsApplicationsIcon className="icon" />
+            <SettingsApplicationsIcon className={styles.icon} />
             <span>Settings</span>
           </li>
-          <p className="title">USER</p>
+          <p className={styles.title}>USER</p>
           <li>
-            <AccountCircleOutlinedIcon className="icon" />
+            <AccountCircleOutlinedIcon className={styles.icon} />
             <span>Profile</span>
           </li>
           <li>
-            <ExitToAppIcon className="icon" />
+            <ExitToAppIcon className={styles.icon} />
             <span>Logout</span>
           </li>
         </ul>
       </div>
-      <div className="bottom">
-        <div className="colorOption"></div>
-        <div className="colorOption"></div>
-      </div>
+      {/* <div className={styles.bottom}>
+        <div className={styles.colorOption}></div>
+        <div className={styles.colorOption}></div>
+      </div> */}
     </div>
   );
 };
