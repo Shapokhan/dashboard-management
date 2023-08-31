@@ -50,6 +50,7 @@ const Sidebar = () => {
             <LocalShippingIcon className={styles.icon} />
             <span>Delivery</span>
           </li>
+          {/*
           <p className={styles.title}>USEFUL</p>
           <li>
             <InsertChartIcon className={styles.icon} />
@@ -67,7 +68,8 @@ const Sidebar = () => {
           <li>
             <PsychologyOutlinedIcon className={styles.icon} />
             <span>Logs</span>
-          </li>
+          </li> 
+          */}
           <li>
             <SettingsApplicationsIcon className={styles.icon} />
             <span>Settings</span>
