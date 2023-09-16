@@ -11,8 +11,23 @@ import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import SettingsApplicationsIcon from "@mui/icons-material/SettingsApplications";
 import ExitToAppIcon from "@mui/icons-material/ExitToApp";
 import { useState } from "react";
+import Link from "next/link";
+import { toast } from "react-toastify";
+import { useRouter } from "next/navigation";
+import axios from "axios";
 
-const Navbar = () => {
+const Navbar = (props) => {
+  const router = useRouter();
+  const logout = async () => {
+    try {
+      await axios.get("/api/users/logout");
+      toast.success("Logout successful");
+      router.push("/login");
+    } catch (error) {
+      console.log(error.message);
+      toast.error(error.message); 
+    }
+  }
   const [isDropdownOpen, setDropdownOpen] = useState(false);
 
   const toggleDropdown = () => {
@@ -54,7 +69,7 @@ const Navbar = () => {
               alt=""
               className={styles.avatar}
             />
-            <p style={{ marginLeft: "1rem" }}>Admin</p>
+            <p style={{ marginLeft: "1rem" }}>{props.username}</p>
             <ul className={`${styles.dropdownContent} ${isDropdownOpen ? styles.show : ''}`}>
               <li>
                 <a href="#">
@@ -69,10 +84,10 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a href="#">
+                <Link href="#" onClick={logout}>
                   <ExitToAppIcon />
                   <span>Logout</span>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
