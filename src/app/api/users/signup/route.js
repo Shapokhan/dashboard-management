@@ -10,8 +10,6 @@ export async function POST(request) {
         const reqBody = await request.json();
         const {username, email, password} = reqBody;
         
-        console.log(reqBody);
-
         //check if user already exist
         const user = await User.findOne({email});
         if(user) {
@@ -29,7 +27,6 @@ export async function POST(request) {
             password: hasPassword
         });
         const savedUser = await newUser.save();
-        console.log(savedUser);
         return NextResponse.json({
             message: "User created successfully",
             success: true,

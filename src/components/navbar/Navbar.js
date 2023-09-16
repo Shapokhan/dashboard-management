@@ -16,7 +16,7 @@ import { toast } from "react-toastify";
 import { useRouter } from "next/navigation";
 import axios from "axios";
 
-const Navbar = (props) => {
+const Navbar = ({user}) => {
   const router = useRouter();
   const logout = async () => {
     try {
@@ -69,7 +69,15 @@ const Navbar = (props) => {
               alt=""
               className={styles.avatar}
             />
-            <p style={{ marginLeft: "1rem" }}>{props.username}</p>
+            <p style={{ marginLeft: "1rem" }}>
+            {user ? (
+              <div>
+                Welcome, {user.username}!
+              </div>
+            ) : (
+              "Loading user..."
+            )}
+            </p>
             <ul className={`${styles.dropdownContent} ${isDropdownOpen ? styles.show : ''}`}>
               <li>
                 <a href="#">
