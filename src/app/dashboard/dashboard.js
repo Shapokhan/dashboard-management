@@ -1,39 +1,39 @@
 "use client";
 import React from "react";
 import styles from "./page.module.css";
-import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
-import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
-import NotificationsActiveOutlinedIcon from '@mui/icons-material/NotificationsActiveOutlined';
-import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
-import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
+import Sidebar from "@/components/sidebar/Sidebar";
+import Navbar from "@/components/navbar/Navbar";
+import Widget from "@/components/widgets/Widget";
+import Featured from "@/components/featured/Featured";
+import Chart from "@/components/chart/Chart";
+import Table from "@/components/table/Table";
 
 const Dashboard = () => {
   return (
-    <div className={styles.gridContainer}>
-        <header className={styles.header}>
-            <div className={styles.menuIcon}>
-                <MenuOutlinedIcon fontSize="large" />     
-            </div>  
+    <div className={styles.home}>
 
-            <div className={styles.headerLeft}>
-               <SearchOutlinedIcon fontSize="large" />
-            </div>
+      <Sidebar />
+      <div className={styles.homeContainer}>
 
-            <div className={styles.headerRight}>
-                <NotificationsActiveOutlinedIcon className={styles.materialIconsOutlined} />
-                <EmailOutlinedIcon className={styles.materialIconsOutlined} />
-                <AccountCircleOutlinedIcon className={styles.materialIconsOutlined} />
-            </div>
+        <Navbar />
+        <div className={styles.widgets}>
+          <Widget type="user" />
+          <Widget type="order" />
+          <Widget type="earning" />
+          <Widget type="balance" />
+        </div>
 
-        </header>
+        <div className={styles.charts}>
+          <Featured />
+          <Chart title="Last 6 Months (Revenue)" aspect={2 / 1} />
+        </div>
 
-        <aside className={styles.sidebar}>
+        <div className={styles.listContainer}>
+          <div className={styles.listTitle}>Latest Transactions</div>
+          <Table />
+        </div>
 
-        </aside>
-
-        <main className={styles.mainContainer}>
-
-        </main>
+      </div>
     </div>
   );
 };

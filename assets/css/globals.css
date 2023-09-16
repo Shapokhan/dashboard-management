@@ -62,11 +62,12 @@ Medium: 11px
   --white: #fff;
   --bg-red: red;
   --primary-color: #49c5b6;
+  --primary-color-hover: #e7fbf8;
   --black: #000;
 }
 
 * {
-  padding: 0;
+  /* padding: 0; */
   margin: 0;
   box-sizing: border-box;
 }
@@ -83,4 +84,7 @@ body {
   font-weight: 400;
   color: #444;
   background-color: var(--main-bg-color);
+}
+.displayFlex{
+  display:"flex";
 }
