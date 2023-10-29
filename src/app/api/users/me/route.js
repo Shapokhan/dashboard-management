@@ -12,7 +12,8 @@ export async function GET(request) {
                     .select("-password");
         return NextResponse.json({
             message: "User Found",
-            data: user
+            data: user,
+            status: 200
         });
     } catch (error) {
         return NextResponse.json({error: error.message},
