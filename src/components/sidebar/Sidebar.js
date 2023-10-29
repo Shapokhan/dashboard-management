@@ -1,4 +1,4 @@
-import styles from './sidebar.module.css';
+import styles from './Sidebar.module.css';
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";

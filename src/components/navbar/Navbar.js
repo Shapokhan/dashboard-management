@@ -1,5 +1,5 @@
 "use client";
-import styles from "./navbar.module.css";
+import styles from "./Navbar.module.css";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import LanguageOutlinedIcon from "@mui/icons-material/LanguageOutlined";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
