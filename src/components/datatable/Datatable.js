@@ -1,5 +1,5 @@
 "use client";
-import styles from "./datatable.module.css";
+import styles from "./Datatable.module.css";
 import { DataGrid, GridColDef, GridValueGetterParams } from "@mui/x-data-grid";
 import { userColumns, userRows } from "../../datatablesource";
 import Link from "next/link";

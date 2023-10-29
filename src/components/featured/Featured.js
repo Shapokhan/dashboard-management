@@ -1,4 +1,4 @@
-import styles from "./featured.module.css";
+import styles from "./Featured.module.css";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";

@@ -1,8 +1,8 @@
 "use client";
 import React, { useState } from 'react';
 import styles from './new.module.css';
-import Sidebar from '@/components/sidebar/sidebar';
-import Navbar from '@/components/navbar/navbar';
+import Sidebar from '@/components/sidebar/Sidebar';
+import Navbar from '@/components/navbar/Navbar';
 import DriveFolderUploadOutlinedIcon from "@mui/icons-material/DriveFolderUploadOutlined";
 
 const New = ({ inputs, title }) => {

@@ -1,4 +1,4 @@
-import styles from "@/components/datatable/datatable.module.css";
+import styles from "@/components/datatable/Datatable.module.css";
 
 export const userColumns = [
   { field: "id", headerName: "ID", width: 70 },

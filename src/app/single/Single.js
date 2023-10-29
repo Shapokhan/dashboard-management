@@ -1,7 +1,7 @@
-import Sidebar from '@/components/sidebar/sidebar';
-import styles from './single.module.css';
-import Navbar from '@/components/navbar/navbar';
-import List from '@/components/table/table';
+import Sidebar from '@/components/sidebar/Sidebar';
+import styles from './Single.module.css';
+import Navbar from '@/components/navbar/Navbar';
+import List from '@/components/table/Table';
 
 const Single = () => {
     return (
