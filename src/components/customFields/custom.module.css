@@ -1,0 +1,9 @@
+.error {
+    color: red; /* Set the text color to red for error messages */
+    font-size: 1rem; /* Define the font size for error messages */
+    margin-top: 4px; /* Add some spacing above the error message */
+}
+
+.borderRed {
+    border-color: red;
+}
